@@ -1,0 +1,71 @@
+.swiper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper .content {}
+
+
+
+.swiper .dot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper .dot i {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #949BA1;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.swiper .dot i:first-child {
+    background: #949BA1;
+}
+
+.swiper .content img {
+    width: 100%;
+    /* height: 100px; */
+    display: block;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.swiper .content img:first-child {
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.controller span {
+    position: absolute;
+    color: white;
+    /* background: black; */
+    top: 50%;
+    transition: all .3s;
+}
+
+.controller span.prev {
+    left: -50px;
+}
+
+.controller span.next {
+    right: -50px;
+}
+
+.swiper:hover .controller span.prev {
+    left: 0;
+}
+
+.swiper:hover .controller span.next {
+    right: 0;
+}
